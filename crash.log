@@ -1,0 +1,256 @@
+Crashlog created at 2013-07-07 14:34:23 +0200
+
+===== MESSAGE:
+
+Less::ParseError: 'elastislide/style.less' wasn't found.
+
+===== COMPILATION STACK:
+
+  - [item]   /assets/less/application/ (rep default)
+
+===== STACK TRACE:
+
+  0. at less.Parser.parser.parse.i (/home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/js/lib/less/parser.js:426:69)
+  1. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/parser.rb:100:in `block in to_css'
+  2. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/java_script/v8_context.rb:90:in `block in do_lock'
+  3. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/java_script/v8_context.rb:88:in `call'
+  4. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/java_script/v8_context.rb:88:in `Locker'
+  5. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/java_script/v8_context.rb:88:in `do_lock'
+  6. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/java_script/v8_context.rb:60:in `lock'
+  7. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/java_script/v8_context.rb:30:in `exec'
+  8. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/java_script.rb:26:in `exec'
+  9. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib/less/parser.rb:100:in `to_css'
+  10. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/filters/less.rb:49:in `run'
+  11. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/filter.rb:122:in `setup_and_run'
+  12. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/result_data/item_rep.rb:344:in `filter'
+  13. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/item_rep_proxy.rb:47:in `filter'
+  14. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/rule_context.rb:55:in `filter'
+  15. ./Rules:4:in `block in load'
+  16. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  17. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  18. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
+  19. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
+  20. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
+  21. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
+  22. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  23. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  24. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/commands/compile.rb:363:in `block in run'
+  25. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/commands/compile.rb:404:in `run_listeners_while'
+  26. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/commands/compile.rb:362:in `run'
+  27. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  28. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  29. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  30. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/command_runner.rb:13:in `call'
+  31. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/cri-2.3.0/lib/cri/command_dsl.rb:185:in `block in runner'
+  32. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/cri-2.3.0/lib/cri/command.rb:296:in `call'
+  33. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/cri-2.3.0/lib/cri/command.rb:296:in `run_this'
+  34. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/cri-2.3.0/lib/cri/command.rb:249:in `run'
+  35. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/cri-2.3.0/lib/cri/command.rb:262:in `run'
+  36. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli.rb:52:in `block in run'
+  37. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/error_handler.rb:70:in `handle_while'
+  38. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  39. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib/nanoc/cli.rb:50:in `run'
+  40. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/bin/nanoc:19:in `<top (required)>'
+  41. /home/bartek/.rvm/gems/ruby-1.9.3-p194/bin/nanoc:19:in `load'
+  42. /home/bartek/.rvm/gems/ruby-1.9.3-p194/bin/nanoc:19:in `<main>'
+  43. /home/bartek/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+  ... 46 more lines omitted. See full crash log for details.
+
+===== VERSION INFORMATION:
+
+nanoc 3.6.3 © 2007-2013 Denis Defreyne.
+Running ruby 1.9.3 (2012-04-20) on i686-linux with RubyGems 2.0.3.
+
+===== SYSTEM INFORMATION:
+
+Linux bartek-ubuntu 3.2.0-49-generic-pae #75-Ubuntu SMP Tue Jun 18 18:00:21 UTC 2013 i686 i686 i386 GNU/Linux
+
+===== INSTALLED GEMS:
+
+  actionmailer 3.2.8, 3.2.11
+  actionpack 3.2.8, 3.2.11, 3.2.12
+  activemodel 3.2.8, 3.2.11, 3.2.12
+  activerecord 3.2.8, 3.2.11
+  activeresource 3.2.8, 3.2.11
+  activesupport 3.2.8, 3.2.11, 3.2.12
+  addressable 2.3.2
+  adsf 1.1.1
+  annotate 2.4.1.beta1
+  arel 3.0.2
+  bcrypt-ruby 3.0.1
+  bootstrap 0.0.1
+  bootstrap-sass 2.0.0
+  builder 3.0.3, 3.0.4
+  bundler 1.2.1
+  capybara 1.1.2
+  childprocess 0.3.5, 0.3.6, 0.3.7
+  cocaine 0.3.2, 0.4.0, 0.4.2
+  coderay 1.0.8
+  coffee-rails 3.2.2
+  coffee-script 2.2.0
+  coffee-script-source 1.3.3, 1.4.0
+  colored 1.2
+  commonjs 0.2.6
+  cri 2.3.0
+  diff-lcs 1.1.3
+  erubis 2.7.0
+  excon 0.16.4
+  execjs 1.4.0
+  factory_girl 2.3.2
+  factory_girl_rails 1.4.0
+  ffi 1.1.5, 1.3.1
+  guard 1.4.0, 1.5.3, 1.6.2
+  guard-rspec 0.5.5
+  guard-spork 0.3.2
+  heroku 2.32.11
+  heroku-api 0.3.5
+  hike 1.2.1
+  i18n 0.6.1
+  journey 1.0.4
+  jquery-rails 2.1.3, 2.2.0, 2.2.1
+  json 1.7.5, 1.7.6
+  launchy 2.1.2
+  less 2.3.2
+  less-rails 2.2.3, 2.2.6
+  less-rails-bootstrap 2.1.1, 2.2.0, 2.2.1
+  libnotify 0.5.9
+  libv8 3.3.10.4, 3.11.8.13
+  libwebsocket 0.1.5
+  listen 0.5.2, 0.5.3, 0.7.2
+  lumberjack 1.0.2
+  mail 2.4.4
+  method_source 0.8.1
+  mime-types 1.19, 1.20.1
+  multi_json 1.3.6, 1.3.7, 1.5.0
+  nanoc 3.6.3
+  nanoc-javascript-concatenator 0.0.2
+  netrc 0.7.7
+  nokogiri 1.5.5, 1.5.6
+  orm_adapter 0.4.0
+  paperclip 3.2.0, 3.3.0, 3.3.1, 3.4.0
+  pg 0.14.1
+  polyglot 0.3.3
+  pry 0.9.10, 0.9.11.4
+  rack 1.4.1, 1.4.4, 1.4.5
+  rack-cache 1.2
+  rack-ssl 1.3.2, 1.3.3
+  rack-test 0.6.2
+  rails 3.2.8, 3.2.11
+  rails-footnotes 3.7.8, 3.7.9
+  railties 3.2.8, 3.2.11
+  rainpress 1.0
+  rake 0.9.2.2, 10.0.3
+  rb-inotify 0.8.8
+  rdoc 3.12
+  ref 1.0.2
+  rest-client 1.6.7
+  rspec 2.9.0
+  rspec-core 2.9.0
+  rspec-expectations 2.9.1
+  rspec-mocks 2.9.0
+  rspec-rails 2.9.0
+  rubygems-bundler 1.1.0
+  rubygems-update 2.0.3
+  rubyzip 0.9.9
+  rvm 1.11.3.5
+  sass 3.2.1, 3.2.2, 3.2.5
+  sass-rails 3.2.5, 3.2.6
+  selenium-webdriver 2.25.0, 2.26.0, 2.29.0
+  slop 3.3.3, 3.4.3
+  spork 0.9.0
+  sprockets 2.1.3, 2.2.2
+  sqlite3 1.3.6, 1.3.7
+  state_machine 1.1.2
+  terminal-table 1.4.5
+  therubyracer 0.10.2, 0.11.3
+  thor 0.16.0, 0.17.0
+  tilt 1.3.3
+  treetop 1.4.10, 1.4.11, 1.4.12
+  twitter-bootstrap-rails 2.1.3, 2.1.6, 2.2.0, 2.2.4
+  twitter-bootswatch-rails 2.2.2.1
+  twitter-bootswatch-rails-helpers 2.2.1.0
+  tzinfo 0.3.33, 0.3.35
+  uglifier 1.3.0
+  warden 1.2.1
+  websocket 1.0.7
+  will_paginate 3.0.3
+  xpath 0.1.4
+  yui-rails 0.3.0
+
+===== ENVIRONMENT:
+
+COLORTERM => "gnome-terminal"
+COMPIZ_CONFIG_PROFILE => "ubuntu"
+COMP_WORDBREAKS => " \t\n\"'><;|&(:"
+DBUS_SESSION_BUS_ADDRESS => "unix:abstract=/tmp/dbus-zVafqLFCWs,guid=4699dab1836a2d9c184a705200000016"
+DEFAULTS_PATH => "/usr/share/gconf/ubuntu.default.path"
+DESKTOP_SESSION => "ubuntu"
+DISPLAY => ":0"
+GDMSESSION => "ubuntu"
+GEM_HOME => "/home/bartek/.rvm/gems/ruby-1.9.3-p194"
+GEM_PATH => "/home/bartek/.rvm/gems/ruby-1.9.3-p194:/home/bartek/.rvm/gems/ruby-1.9.3-p194@global"
+GNOME_DESKTOP_SESSION_ID => "this-is-deprecated"
+GNOME_KEYRING_CONTROL => "/tmp/keyring-oa966V"
+GPG_AGENT_INFO => "/tmp/keyring-oa966V/gpg:0:1"
+HOME => "/home/bartek"
+IRBRC => "/home/bartek/.rvm/rubies/ruby-1.9.3-p194/.irbrc"
+LANG => "en_US.UTF-8"
+LOGNAME => "bartek"
+MANDATORY_PATH => "/usr/share/gconf/ubuntu.mandatory.path"
+MY_RUBY_HOME => "/home/bartek/.rvm/rubies/ruby-1.9.3-p194"
+PATH => "/home/bartek/.rvm/gems/ruby-1.9.3-p194/bin:/home/bartek/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/bartek/.rvm/rubies/ruby-1.9.3-p194/bin:/home/bartek/.rvm/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+PWD => "/home/bartek/Projects/dawidlorenc.pl"
+RUBY_VERSION => "ruby-1.9.3-p194"
+SESSION_MANAGER => "local/bartek-ubuntu:@/tmp/.ICE-unix/1483,unix/bartek-ubuntu:/tmp/.ICE-unix/1483"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AGENT_PID => "1519"
+SSH_AUTH_SOCK => "/tmp/keyring-oa966V/ssh"
+TERM => "xterm"
+UBUNTU_MENUPROXY => "libappmenu.so"
+USER => "bartek"
+WINDOWID => "62914566"
+XAUTHORITY => "/home/bartek/.Xauthority"
+XDG_CONFIG_DIRS => "/etc/xdg/xdg-ubuntu:/etc/xdg"
+XDG_CURRENT_DESKTOP => "Unity"
+XDG_DATA_DIRS => "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/"
+XDG_SEAT_PATH => "/org/freedesktop/DisplayManager/Seat0"
+XDG_SESSION_COOKIE => "c12d574aaec082b029c8bbc90000000b-1373199365.212081-230388232"
+XDG_SESSION_PATH => "/org/freedesktop/DisplayManager/Session0"
+_ => "/home/bartek/.rvm/gems/ruby-1.9.3-p194/bin/nanoc"
+_ORIGINAL_GEM_PATH => "/home/bartek/.rvm/gems/ruby-1.9.3-p194:/home/bartek/.rvm/gems/ruby-1.9.3-p194@global"
+__array_start => "0"
+_first => "0"
+_second => "1"
+escape_flag => "1"
+rvm_bin_path => "/home/bartek/.rvm/bin"
+rvm_env_string => "ruby-1.9.3-p194"
+rvm_path => "/home/bartek/.rvm"
+rvm_prefix => "/home/bartek"
+rvm_ruby_string => "ruby-1.9.3-p194"
+rvm_version => "1.16.10 (stable)"
+
+===== LOAD PATHS:
+
+  0. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib
+  1. /home/bartek/.rvm/gems/ruby-1.9.3-p194@global/gems/rubygems-bundler-1.1.0/lib
+  2. /home/bartek/.rvm/gems/ruby-1.9.3-p194@global/gems/bundler-1.2.1/lib
+  3. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/colored-1.2/lib
+  4. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/cri-2.3.0/lib
+  5. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-3.6.3/lib
+  6. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/nanoc-javascript-concatenator-0.0.2/lib
+  7. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/commonjs-0.2.6/lib
+  8. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/less-2.3.2/lib
+  9. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/ref-1.0.2/lib
+  10. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/libv8-3.11.8.13-x86-linux/lib
+  11. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/libv8-3.11.8.13-x86-linux/ext
+  12. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/therubyracer-0.11.3/lib
+  13. /home/bartek/.rvm/gems/ruby-1.9.3-p194/gems/therubyracer-0.11.3/ext
+  14. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1
+  15. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby/1.9.1/i686-linux
+  16. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/site_ruby
+  17. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/vendor_ruby/1.9.1
+  18. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/vendor_ruby/1.9.1/i686-linux
+  19. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/vendor_ruby
+  20. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1
+  21. /home/bartek/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/i686-linux
